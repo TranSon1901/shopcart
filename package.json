@@ -2,7 +2,7 @@
   "name": "shopcart",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://TranSon1901.github.io/shopcart",
+  "homepage": "https://TranSon1901.github.io/shopcart/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
