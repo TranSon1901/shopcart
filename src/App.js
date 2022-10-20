@@ -1,10 +1,8 @@
-import Header from "./components/header";
-import Routers from "./routes/Routers";
+import Layout from "./layouts/Layout";
 function App() {
   return (
     <div>
-       <Header />
-       <Routers />
+       <Layout />
     </div>
   );
 }
