@@ -1,7 +1,10 @@
+import Header from "./components/header";
+import Routers from "./routes/Routers";
 function App() {
   return (
     <div>
-       son
+       <Header />
+       <Routers />
     </div>
   );
 }
