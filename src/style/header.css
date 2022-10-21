@@ -78,7 +78,6 @@ nav ul li a:hover{
        inset: 0;
        background: rgba(0, 0, 0, 0.425);
        z-index: 99;
-       display: none;
     }
     nav ul{
         position: absolute;
