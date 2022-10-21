@@ -7,37 +7,5 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-header{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    padding: 0 20px;
-    justify-content: space-between;
-    align-items: center;
-    background: #999;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-nav ul li a{
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 20px;
-    color: #0984e3;
-}
-.nav_cart{
-    position: relative;
-}
-.nav_cart a{
-    font-size: 25px;
-    color: #ff7675;
-}
-.nav_cart span{
-    position: absolute;
-    bottom: 0;
-    right: 10px;
-    color:#e84393;
-}
+
 

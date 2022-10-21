@@ -1,0 +1,103 @@
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: #999;
+    padding: 0 100px;
+}
+.header_logo{
+    text-align: center;
+}
+header h5{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #212245;
+}
+header img{
+    width:  60px;
+    height: 55px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+nav ul li a{
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color:  #212245;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover{
+    color: #df2020;
+}
+.nav_right{
+    display: flex;
+    align-items: center;
+}
+.user,
+.menu,
+.cart_icon{
+    color: #212245;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.cart_icon{
+    font-size: 20px;
+}
+.cart{
+    position: relative;
+}
+.user{
+    font-size: 24px;
+}
+.menu{
+    font-size: 30px;
+    font-weight: 600;
+    display: none;
+}
+.cart_badge{
+    position: absolute;
+    bottom:-5px;
+    right:5px;
+}
+.nav_close{
+    display: none;
+}
+@media only screen and (max-width: 992px){
+    nav{
+        position: fixed;
+       inset: 0;
+       background: rgba(0, 0, 0, 0.425);
+    }
+    nav ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        height: 100%;
+        width: 250px;
+        background: #fff;
+        z-index: 100;
+        padding-top: 20px;
+    }
+    nav ul li{
+        padding: 20px 0;
+    }
+    .nav_right{
+        display: none;
+    }
+    .nav_close{
+        position: absolute;
+        top:   10px;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        display: block;
+    }
+}
