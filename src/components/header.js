@@ -5,8 +5,12 @@ import {BiMenu} from 'react-icons/bi'
 import Logo from "../assets/images/res-logo.png"
 import {AiOutlineClose} from 'react-icons/ai'
 import '../style/header.css'
+import {useState} from 'react'
 function Header(){
-
+   const [togle,setTogle]=useState(true)
+   const hanldeTogle=()=>{
+     setTogle(!togle)
+   }
     return(
         <header>
             <div className='header_logo'>
@@ -15,16 +19,18 @@ function Header(){
                 </Link> 
                 <h5>Tasty Treat</h5>
             </div>
-            <nav>
+          {togle && <nav>
                 <ul>
                     <li><Link to="/shopcart">Home</Link></li>
                     <li><Link to="/shopcart/foods">Foods</Link></li>
                     <li><Link to="/shopcart/cart">Cart</Link></li>
                     <li><Link to="/shopcart/contact">Contact</Link></li>
-                    <AiOutlineClose className='nav_close'/>
+                    <AiOutlineClose className='nav_close' 
+                     onClick={hanldeTogle}
+                    />
                 </ul>
                 
-            </nav>
+            </nav>}
             <div className='nav_right'>
                  <span className='cart'>
                     <BsBasket className='cart_icon'/>
@@ -36,7 +42,9 @@ function Header(){
                     </Link>
                  </span>
                  <span>
-                        <BiMenu className='menu'/>    
+                    <BiMenu className='menu'
+                    onClick={hanldeTogle}
+                    />    
                  </span>
             </div>
         </header>

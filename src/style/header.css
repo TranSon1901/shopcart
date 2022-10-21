@@ -52,6 +52,7 @@ nav ul li a:hover{
 }
 .cart{
     position: relative;
+    z-index: 1;
 }
 .user{
     font-size: 24px;
@@ -60,11 +61,13 @@ nav ul li a:hover{
     font-size: 30px;
     font-weight: 600;
     display: none;
+   
 }
 .cart_badge{
     position: absolute;
     bottom:-5px;
     right:5px;
+    z-index: 1;
 }
 .nav_close{
     display: none;
@@ -74,6 +77,8 @@ nav ul li a:hover{
         position: fixed;
        inset: 0;
        background: rgba(0, 0, 0, 0.425);
+       z-index: 99;
+       display: none;
     }
     nav ul{
         position: absolute;
@@ -90,7 +95,8 @@ nav ul li a:hover{
         padding: 20px 0;
     }
     .nav_right{
-        display: none;
+        display: flex;
+        align-items: center;
     }
     .nav_close{
         position: absolute;
@@ -99,5 +105,8 @@ nav ul li a:hover{
         font-size: 20px;
         cursor: pointer;
         display: block;
+    }
+    .menu{
+        display: inline-block;
     }
 }
