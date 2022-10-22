@@ -7,12 +7,12 @@ import Foods from "../pages/Foods"
 function Routers(){
     return(
         <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/home" element={<Home />}/>
-            <Route path="/foods" element={<Foods />}/>
-            <Route path="/cart" element={<Cart />}/>
-            <Route path="/contact" element={<Contact />}/>
-            <Route path="/login" element={<Login />}/>
+            <Route path="/shopcart/" element={<Home />}/>
+            <Route path="/shopcart/home" element={<Home />}/>
+            <Route path="/shopcart/foods" element={<Foods />}/>
+            <Route path="/shopcart/cart" element={<Cart />}/>
+            <Route path="/shopcart/contact" element={<Contact />}/>
+            <Route path="/shopcart/login" element={<Login />}/>
         </Routes>
     )
 }
