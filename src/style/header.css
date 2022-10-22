@@ -19,7 +19,7 @@ header h5{
 header img{
     width:  60px;
     height: 55px;
-}
+} 
 nav ul{
     display: flex;
     list-style: none;
@@ -40,7 +40,6 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
 }
-.user,
 .menu,
 .cart_icon{
     color: #212245;
@@ -48,17 +47,14 @@ nav ul li a:hover{
     margin-right: 15px;
 }
 .cart_icon{
-    font-size: 20px;
+    font-size: 25px;
 }
 .cart{
     position: relative;
     z-index: 1;
 }
-.user{
-    font-size: 24px;
-}
 .menu{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 600;
     display: none;
    
@@ -73,11 +69,16 @@ nav ul li a:hover{
     display: none;
 }
 @media only screen and (max-width: 992px){
-    nav{
-        position: fixed;
+    header{
+        padding: 0 80px;
+    }
+    .nav_modal{
+       position: fixed;
        inset: 0;
        background: rgba(0, 0, 0, 0.425);
        z-index: 99;
+       transition: all 0.5s linear; 
+       display: none
     }
     nav ul{
         position: absolute;
@@ -88,10 +89,13 @@ nav ul li a:hover{
         width: 250px;
         background: #fff;
         z-index: 100;
-        padding-top: 20px;
+        padding-top: 20px;  
+        transform: translateX(100%);   
+        transition: all 0.3s linear; 
     }
     nav ul li{
         padding: 20px 0;
+        
     }
     .nav_right{
         display: flex;
@@ -101,11 +105,17 @@ nav ul li a:hover{
         position: absolute;
         top:   10px;
         right: 10px;
-        font-size: 20px;
+        font-size: 25px;
         cursor: pointer;
         display: block;
     }
     .menu{
         display: inline-block;
+    }
+    .togle{
+        display: block;
+    }
+    .nav_link_togle{
+        transform: translateX(0);
     }
 }
