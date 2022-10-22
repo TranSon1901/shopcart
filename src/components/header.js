@@ -13,7 +13,7 @@ function Header(){
     return(
         <header>
             <div className='header_logo'>
-                <Link to="/shopcart">
+                <Link to="/">
                  <img src={Logo}/>
                 </Link> 
                 <h5>Tasty Treat</h5>
@@ -23,11 +23,16 @@ function Header(){
                 className={togle? "nav_modal togle":"nav_modal"}> 
                 </div>
                 <ul className={togle? "nav_link_togle":""}>
-                    <li><Link to="/shopcart">Home</Link></li>
-                    <li><Link to="/shopcart/foods">Foods</Link></li>
-                    <li><Link to="/shopcart/cart">Cart</Link></li>
-                    <li><Link to="/shopcart/contact">Contact</Link></li>
-                    <li><Link to="/shopcart/login">Login</Link></li>
+                    <li><NavLink
+                    to="/">Home</NavLink></li>
+                    <li><NavLink 
+                     to="/foods">Foods</NavLink></li>
+                    <li><NavLink 
+                     to="/cart">Cart</NavLink></li>
+                    <li><NavLink 
+                     to="/contact">Contact</NavLink></li>
+                    <li><NavLink 
+                     to="/login">Login</NavLink></li>
                     <AiOutlineClose className='nav_close' 
                      onClick={hanldeTogle}
                     />
