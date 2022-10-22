@@ -13,9 +13,9 @@ function Header(){
     return(
         <header>
             <div className='header_logo'>
-                <Link to="/">
+                <NavLink to="/shopcart">
                  <img src={Logo}/>
-                </Link> 
+                </NavLink> 
                 <h5>Tasty Treat</h5>
             </div>
            <nav>
@@ -24,15 +24,15 @@ function Header(){
                 </div>
                 <ul className={togle? "nav_link_togle":""}>
                     <li><NavLink
-                    to="/">Home</NavLink></li>
+                    to="/shopcart/home">Home</NavLink></li>
                     <li><NavLink 
-                     to="/foods">Foods</NavLink></li>
+                     to="/shopcart/foods">Foods</NavLink></li>
                     <li><NavLink 
-                     to="/cart">Cart</NavLink></li>
+                     to="/shopcart/cart">Cart</NavLink></li>
                     <li><NavLink 
                      to="/contact">Contact</NavLink></li>
                     <li><NavLink 
-                     to="/login">Login</NavLink></li>
+                     to="/shopcart/login">Login</NavLink></li>
                     <AiOutlineClose className='nav_close' 
                      onClick={hanldeTogle}
                     />
