@@ -8,14 +8,15 @@ import {useState} from 'react'
 function Header(){
    const [togle,setTogle]=useState(false)
    const hanldeTogle=()=>{
+    console.log(1)
      setTogle(!togle)
    }
     return(
         <header>
             <div className='header_logo'>
-                <NavLink to="/shopcart/">
+                <Link to="/shopcart/">
                  <img src={Logo}/>
-                </NavLink> 
+                </Link> 
                 <h5>Tasty Treat</h5>
             </div>
            <nav>
@@ -23,15 +24,15 @@ function Header(){
                 className={togle? "nav_modal togle":"nav_modal"}> 
                 </div>
                 <ul className={togle? "nav_link_togle":""}>
-                    <li><NavLink
+                    <li><NavLink  onClick={hanldeTogle}
                     to="/shopcart/home">Home</NavLink></li>
-                    <li><NavLink 
+                    <li><NavLink  onClick={hanldeTogle}
                      to="/shopcart/foods">Foods</NavLink></li>
-                    <li><NavLink 
+                    <li><NavLink  onClick={hanldeTogle}
                      to="/shopcart/cart">Cart</NavLink></li>
-                    <li><NavLink 
+                    <li><NavLink  onClick={hanldeTogle}
                      to="/shopcart/contact">Contact</NavLink></li>
-                    <li><NavLink 
+                    <li><NavLink  onClick={hanldeTogle}
                      to="/shopcart/login">Login</NavLink></li>
                     <AiOutlineClose className='nav_close' 
                      onClick={hanldeTogle}
