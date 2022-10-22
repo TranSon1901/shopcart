@@ -30,6 +30,10 @@
 .hero_img img{
    width: 100%;
 }
+.hero_btn{
+    margin: 25px 0;
+    display: flex;
+}
 .hero_btn button{
     border: none;
     outline: none;
@@ -41,7 +45,14 @@
 .order_btn{
     background: #df2020;
     color: #fff;
+    margin-right: 80px;
     transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+.hero_btn_icon{
+    font-size: 18px;
+    color: #fff;
 }
 .order_btn:hover {
     background: #212245;
@@ -53,4 +64,24 @@
 .allFood_btn a{
     color: #df2020;
     text-decoration: none;
+}
+.hero_service{
+    display: flex;
+   
+}
+.hero_service p{
+    color: #212245;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-right: 30px;
+    display: flex;
+}
+.hero_icon{
+    background-color: #df2020;
+    padding: 5px;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 500 !important;
+    font-size: 25px;
+    margin-right: 5px;
 }
