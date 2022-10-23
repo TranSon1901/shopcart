@@ -112,6 +112,9 @@
         font-size: 1.5rem;
         line-height: 40px;
     }
+    .hero_service{
+        flex-direction: column;
+    }
 }
 @media only screen and (max-width: 576px){
     .hero_btn button{
@@ -125,5 +128,8 @@
      }
     .hero_content{
         padding-top: 10px;
+    }
+    .hero_service{
+        flex-direction: column;
     }
 }

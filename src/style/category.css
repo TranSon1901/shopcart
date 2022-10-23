@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     width: 200px;
-    margin-top: 10px;
+    margin-bottom: 20px;
   }
   
 .category_item:hover {
@@ -24,8 +24,13 @@
 }  
 
 @media only screen and (max-width: 768px) {
+    .category_wrapper{
+        padding: 10px 20px;
+        justify-content: space-around;
+    }
     .category_item {
       padding: 20px 15px;
+      margin-bottom: 12px;
     }
     .category_img img {
       width: 40px;
@@ -35,4 +40,13 @@
     .category_item h5 {
       font-size: 0.8rem;
     }
-  }
+}
+@media only screen and (max-width: 576px){
+    .category_wrapper{
+        padding: 10px 10px;
+        justify-content: space-around;
+    }
+    .category_item{
+        margin-bottom: 12px;
+    }
+}

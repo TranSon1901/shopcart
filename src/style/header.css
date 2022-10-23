@@ -146,7 +146,7 @@ nav ul li a:hover{
 }
 @media only screen and (max-width: 576px){
     header{
-        padding: 0 10px;
+        padding: 0 20px;
         height: 80px;
     }
 }
