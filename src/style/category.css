@@ -1,6 +1,6 @@
 .category_wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px 100px;
     flex-wrap: wrap;
 }
@@ -14,6 +14,7 @@
     align-items: center;
     width: 200px;
     margin-bottom: 20px;
+    margin: 10px;
   }
   
 .category_item:hover {

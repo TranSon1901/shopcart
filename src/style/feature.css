@@ -1,0 +1,33 @@
+.feature{
+    text-align: center;
+    padding: 0 100px;
+}
+
+.feature_subtitle {
+    color: #df2020;
+    margin-bottom: 10px;
+}
+.feature_title span {
+    color: #df2020;
+}
+.feature_text {
+    color: #777;
+    margin-top: 10px;
+}
+.feature_item p {
+    color: #777;
+}
+.feature_title{
+  font-size: 2rem;
+}
+.feature_inner{
+    display: flex;
+    margin-top: 10px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+.feature_item{
+    text-align: left;
+    width: calc(33.33% - 30px)
+}
+ 
