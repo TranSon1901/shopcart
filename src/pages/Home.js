@@ -12,9 +12,27 @@ import { useState } from 'react'
 import Feature from '../UI/Feature'
 import products from '../assets/fakedata/products'
 import Product from '../UI/Product'
+import {useEffect} from 'react'
 function Home(){
   const [active,setActive]=useState('ALL')
   const [product,setProduct]=useState(products)
+  const [filterproduct,setFilterproduct]=useState(product)
+  console.log(product)
+  useEffect(()=>{
+    if(active==='ALL'){
+      setFilterproduct(product)
+    }
+    if(active==='Burger'){
+      const products=[...product]
+      const burger=products.filter(product=>product.category==='Burger')
+     setFilterproduct(burger)
+    }
+    if(active==='Pizza'){
+      const products=[...product]
+      const pizza=products.filter(product=>product.category==='Pizza')
+     setFilterproduct(pizza)
+    }
+  },[active])
     return(
       <>
         <section className='section_hero'>
@@ -65,10 +83,10 @@ function Home(){
         </section>
         <section className="product_wrapper">
            {
-             product.map((item,index)=>(
-              <>
+             filterproduct.map((item,index)=>(
+              <div className='product_item' key={index}>
                 <Product item={item}/>
-              </>
+              </div>             
              ))
            }
         </section> 

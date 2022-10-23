@@ -1,10 +1,9 @@
 import {Link} from 'react-router-dom'
 import '../style/product.css'
-function Product(props){
-    console.log(props)
-    const { id, title, image01, price } = props.item;
+function Product(prop){
+    const { id, title, image01, price } = prop.item;
     return(
-        <div className="product_item">
+        <>
         <div className="product_img">
           <img src={image01} alt="product_img" className="" />
         </div>
@@ -19,8 +18,9 @@ function Product(props){
               Add to Cart
             </button>
           </div>
-        </div>
-      </div>
+        </div>    
+     </>
+     
     )
 }
 export default Product
