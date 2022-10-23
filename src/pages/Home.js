@@ -10,8 +10,11 @@ import foodCategoryImg02 from "../assets/images/pizza.png";
 import foodCategoryImg03 from "../assets/images/bread.png";
 import { useState } from 'react'
 import Feature from '../UI/Feature'
+import products from '../assets/fakedata/products'
+import Product from '../UI/Product'
 function Home(){
   const [active,setActive]=useState('ALL')
+  const [product,setProduct]=useState(products)
     return(
       <>
         <section className='section_hero'>
@@ -41,7 +44,7 @@ function Home(){
            </div>
         </section>
         <section className='category_wrapper'>
-          <Category />
+        <Category />
         </section>
         <Feature />
         <section className='food_category'>
@@ -60,6 +63,15 @@ function Home(){
              ><img src={foodCategoryImg03}/><span>Bread</span></button>
            </div>
         </section>
+        <section className="product_wrapper">
+           {
+             product.map((item,index)=>(
+              <>
+                <Product item={item}/>
+              </>
+             ))
+           }
+        </section> 
       </> 
     )
 }

@@ -40,7 +40,7 @@ function Feature(){
             <div className='feature_inner'>
               {
                 featureData.map((item,index)=>(
-                    <div className='feature_item'>
+                    <div className='feature_item' key={index}>
                         <img src={item.imgUrl}/>
                         <h5>{item.title}</h5>
                         <p>{item.desc}</p>
