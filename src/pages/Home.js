@@ -4,8 +4,10 @@ import {Link} from 'react-router-dom'
 import {AiOutlineCar} from 'react-icons/ai'
 import {BiCheckShield} from 'react-icons/bi'
 import {GoChevronRight} from 'react-icons/go'
+import Category from '../UI/Category'
 function Home(){
     return(
+      <>
         <section className='section_hero'>
          <div className='hero_content'>
            <h5>Easy way to make an order</h5>
@@ -32,6 +34,10 @@ function Home(){
                <img src={LogoHero}/>
            </div>
         </section>
+        <section className='category_wrapper'>
+          <Category />
+        </section>
+      </> 
     )
 }
 export default Home

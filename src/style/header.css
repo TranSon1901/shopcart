@@ -74,6 +74,7 @@ nav ul li a:hover{
 }
 @media only screen and (max-width: 992px){
     header{
+        width: 100;
         padding: 0 80px;
     }
     .nav_modal{
@@ -85,16 +86,16 @@ nav ul li a:hover{
        display: none
     }
     nav ul{
-        position: absolute;
+        position: fixed;
         top: 0;
-        right: 0;
+        right: -250px;
         flex-direction: column;
         height: 100%;
         width: 250px;
         background: #fff;
         z-index: 100;
         padding-top: 20px;  
-        transform: translateX(100%);   
+        /* transform: translateX(100%);    */
         transition: all 0.3s linear; 
     }
     nav ul li{
@@ -120,6 +121,32 @@ nav ul li a:hover{
         display: block;
     }
     .nav_link_togle{
-        transform: translateX(0);
+        right: 0;
+    }
+}
+@media only screen and (max-width: 768px){
+    header{
+        padding: 0 50px;
+        height: 90px;
+    }
+    .cart_icon{
+        font-size: 18px;
+    }
+    .menu{
+        font-size: 25px;
+    }
+    header img{
+        width:  45px;
+        height: 40px;
+    } 
+    header h5{
+        font-weight: 600;
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 576px){
+    header{
+        padding: 0 10px;
+        height: 80px;
     }
 }

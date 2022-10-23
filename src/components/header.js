@@ -8,7 +8,6 @@ import {useState} from 'react'
 function Header(){
    const [togle,setTogle]=useState(false)
    const hanldeTogle=()=>{
-    console.log(1)
      setTogle(!togle)
    }
     return(
