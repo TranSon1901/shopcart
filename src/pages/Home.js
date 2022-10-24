@@ -13,6 +13,7 @@ import Feature from '../UI/Feature'
 import products from '../assets/fakedata/products'
 import Product from '../UI/Product'
 import {useEffect} from 'react'
+import WhyTasTy from '../UI/WhyTasTy'
 function Home(){
   const [active,setActive]=useState('ALL')
   const [product,setProduct]=useState(products)
@@ -94,7 +95,8 @@ function Home(){
               </div>             
              ))
            }
-        </section> 
+        </section>
+        <WhyTasTy /> 
       </> 
     )
 }
