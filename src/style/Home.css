@@ -121,7 +121,12 @@
     color: #df2020 !important;
 }
 @media only screen and (max-width: 992px){
-
+    .hero_service{
+        flex-direction: column;
+    }
+    .food_category{
+        padding: 0 50px;
+    }
 }
 @media only screen and (max-width: 768px){
     .section_hero{
@@ -130,11 +135,13 @@
      }
     .hero_content{
         padding-top: 10px;
-        width: 80%;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
     }
     .hero_img{
         width: 100%;
-     }
+    }
     .hero_content p{
         font-size: 0.8rem;
         line-height: 25px;
@@ -143,7 +150,8 @@
         font-size: 1rem;
     }
     .hero_btn{
-        margin: 20px 0;
+        margin: 5px 0;
+        display: flex;
     }
     .hero_btn button{
         padding: 5px 15px;
@@ -158,9 +166,6 @@
         font-size: 1.5rem;
         line-height: 40px;
         margin: 5px 0;
-    }
-    .hero_service{
-        flex-direction: column;
     }
     .food_category{
         padding: 0 50px;
@@ -182,6 +187,20 @@
     .food_category{
         padding: 0 20px;
     }
+    .hero_service{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+     }
+     .food_category div{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        column-gap: 5px;
+     }
+     .food_category div button{
+        width: 33.33%;
+     }
 }
 
   

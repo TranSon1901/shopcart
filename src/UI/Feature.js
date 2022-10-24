@@ -42,8 +42,10 @@ function Feature(){
                 featureData.map((item,index)=>(
                     <div className='feature_item' key={index}>
                         <img src={item.imgUrl}/>
-                        <h5>{item.title}</h5>
-                        <p>{item.desc}</p>
+                        <div className='feature_content'>
+                          <h5>{item.title}</h5>
+                          <p>{item.desc}</p> 
+                        </div> 
                     </div>
                 ))
               }    

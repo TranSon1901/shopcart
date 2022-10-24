@@ -1,8 +1,10 @@
 .category_wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px 100px;
     flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
 }
 .category_item {
     background: #fde4e4;
@@ -12,9 +14,8 @@
     transition: 0.4s;
     display: flex;
     align-items: center;
-    width: 200px;
     margin-bottom: 20px;
-    margin: 10px;
+    width: calc(25% - 20px)
   }
   
 .category_item:hover {
@@ -23,14 +24,18 @@
 .category_item h5{
     margin-left: 10px;
 }  
-
+@media only screen and (max-width: 992px){
+  .category_item{
+    width: calc(33.33% - 20px);
+  }
+}
 @media only screen and (max-width: 768px) {
     .category_wrapper{
-       padding: 10px 200px;
+       padding: 10px 50px;
     } 
-    .category_item {
+    .category_item{
       padding: 20px 15px;
-      margin-bottom: 12px;
+      width: calc(50% - 20px);
     }
     .category_img img {
       width: 40px;
@@ -43,9 +48,10 @@
 }
 @media only screen and (max-width: 576px){
     .category_wrapper{
-        padding: 10px 10px;
+        padding: 10px 50px;
     }
     .category_item{
         margin-bottom: 12px;
+        width: 100%;
     }
 }
