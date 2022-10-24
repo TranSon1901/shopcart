@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/shopcart/static/css/main.fdb23842.css",
-    "main.js": "/shopcart/static/js/main.8bed8399.js",
+    "main.css": "/shopcart/static/css/main.20e8ff39.css",
+    "main.js": "/shopcart/static/js/main.696d66cd.js",
     "static/js/787.639a1216.chunk.js": "/shopcart/static/js/787.639a1216.chunk.js",
     "static/media/product_4.3.png": "/shopcart/static/media/product_4.3.2df1cebb0cf62346965c.png",
     "static/media/hero.png": "/shopcart/static/media/hero.e3ef74be66b8a37b4de8.png",
+    "static/media/location.png": "/shopcart/static/media/location.c2a808618ecbf53c92bc.png",
     "static/media/product_3.1.jpg": "/shopcart/static/media/product_3.1.9c207cdf68c9700b11ce.jpg",
     "static/media/product_2.2.jpg": "/shopcart/static/media/product_2.2.4967c9cbe3fec366a31a.jpg",
     "static/media/product_2.3.jpg": "/shopcart/static/media/product_2.3.3914f9eb0c0b372910ea.jpg",
@@ -19,14 +20,17 @@
     "static/media/product_01.jpg": "/shopcart/static/media/product_01.6be97a612b580d595585.jpg",
     "static/media/product_04.jpg": "/shopcart/static/media/product_04.f7c5294d0481fb12cc4c.jpg",
     "static/media/product_08.jpg": "/shopcart/static/media/product_08.efc6c71968cf3ffe817a.jpg",
+    "static/media/bread(2).png": "/shopcart/static/media/bread(2).dd485726262fc6f94474.png",
     "static/media/res-logo.png": "/shopcart/static/media/res-logo.2f9021c4ef5fe532038e.png",
+    "static/media/bread(3).png": "/shopcart/static/media/bread(3).e4b9fdd91579778ae4cc.png",
+    "static/media/bread(1).png": "/shopcart/static/media/bread(1).2fbb5c91c696e21efcb6.png",
     "index.html": "/shopcart/index.html",
-    "main.fdb23842.css.map": "/shopcart/static/css/main.fdb23842.css.map",
-    "main.8bed8399.js.map": "/shopcart/static/js/main.8bed8399.js.map",
+    "main.20e8ff39.css.map": "/shopcart/static/css/main.20e8ff39.css.map",
+    "main.696d66cd.js.map": "/shopcart/static/js/main.696d66cd.js.map",
     "787.639a1216.chunk.js.map": "/shopcart/static/js/787.639a1216.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdb23842.css",
-    "static/js/main.8bed8399.js"
+    "static/css/main.20e8ff39.css",
+    "static/js/main.696d66cd.js"
   ]
 }
