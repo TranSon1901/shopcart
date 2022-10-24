@@ -26,9 +26,8 @@
 
 @media only screen and (max-width: 768px) {
     .category_wrapper{
-        padding: 10px 20px;
-        justify-content: space-around;
-    }
+       padding: 10px 200px;
+    } 
     .category_item {
       padding: 20px 15px;
       margin-bottom: 12px;
@@ -45,7 +44,6 @@
 @media only screen and (max-width: 576px){
     .category_wrapper{
         padding: 10px 10px;
-        justify-content: space-around;
     }
     .category_item{
         margin-bottom: 12px;

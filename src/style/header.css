@@ -75,7 +75,7 @@ nav ul li a:hover{
 @media only screen and (max-width: 992px){
     header{
         width: 100;
-        padding: 0 80px;
+        padding: 0 50px;
     }
     .nav_modal{
        position: fixed;

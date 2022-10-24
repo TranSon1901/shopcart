@@ -32,6 +32,11 @@ function Home(){
       const pizza=products.filter(product=>product.category==='Pizza')
      setFilterproduct(pizza)
     }
+    if(active==='Bread'){
+      const products=[...product]
+      const Bread=products.filter(product=>product.category==='Bread')
+     setFilterproduct(Bread)
+    }
   },[active])
     return(
       <>

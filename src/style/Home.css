@@ -85,58 +85,6 @@
     font-size: 25px;
     margin-right: 5px;
 }
-@media only screen and (max-width: 768px){
-    .section_hero{
-        padding: 0 50px;
-     }
-    .hero_content{
-        padding-top: 10px;
-    }
-    .hero_content p{
-        font-size: 0.8rem;
-        line-height: 25px;
-    }
-    .hero_content h5{
-        font-size: 1rem;
-    }
-    .hero_btn{
-        margin: 20px 0;
-    }
-    .hero_btn button{
-        padding: 5px 15px;
-        font-size: 0.7rem;
-        width: 30%;
-        margin-bottom: 7px;
-    }
-    .order_btn{
-        margin-right: 40px;
-    }
-    .hero_title {
-        font-size: 1.5rem;
-        line-height: 40px;
-        margin: 5px 0;
-    }
-    .hero_service{
-        flex-direction: column;
-    }
-}
-@media only screen and (max-width: 576px){
-    .hero_btn button{
-        width: 50%;
-      }
-      .hero_btn{
-        flex-direction: column;
-    }  
-    .section_hero{
-        padding: 0 20px;
-     }
-    .hero_content{
-        padding-top: 10px;
-    }
-    .hero_service{
-        flex-direction: column;
-    }
-}
 .food_category{
     margin-top: 30px;
     padding: 5px 100px;
@@ -171,6 +119,69 @@
     background: #fff !important;
     border-radius: 5px;
     color: #df2020 !important;
-  }
-  
+}
+@media only screen and (max-width: 992px){
+
+}
+@media only screen and (max-width: 768px){
+    .section_hero{
+        padding: 0 50px;
+        flex-direction: column;
+     }
+    .hero_content{
+        padding-top: 10px;
+        width: 80%;
+    }
+    .hero_img{
+        width: 100%;
+     }
+    .hero_content p{
+        font-size: 0.8rem;
+        line-height: 25px;
+    }
+    .hero_content h5{
+        font-size: 1rem;
+    }
+    .hero_btn{
+        margin: 20px 0;
+    }
+    .hero_btn button{
+        padding: 5px 15px;
+        font-size: 0.7rem;
+        width: 30%;
+        margin-bottom: 7px;
+    }
+    .order_btn{
+        margin-right: 40px;
+    }
+    .hero_title {
+        font-size: 1.5rem;
+        line-height: 40px;
+        margin: 5px 0;
+    }
+    .hero_service{
+        flex-direction: column;
+    }
+    .food_category{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 576px){
+    .hero_btn button{
+        width: 50%;
+    }  
+    .section_hero{
+        padding: 0 20px;
+     }
+    .hero_content{
+        padding-top: 10px;
+    }
+    .hero_service{
+        flex-direction: column;
+    }
+    .food_category{
+        padding: 0 20px;
+    }
+}
+
   
