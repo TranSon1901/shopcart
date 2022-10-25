@@ -5,7 +5,8 @@ import Logo from "../assets/images/res-logo.png"
 import {AiOutlineClose} from 'react-icons/ai'
 import '../style/header.css'
 import {useState} from 'react'
-function Header(){
+function Header({togleCart,setTogleCart}){
+    console.log(togleCart)
    const [togle,setTogle]=useState(false)
    const hanldeTogle=()=>{
      setTogle(!togle)
@@ -41,7 +42,7 @@ function Header(){
             </nav>
             <div className='nav_right'>
                  <span className='cart'>
-                    <BsBasket className='cart_icon'/>
+                    <BsBasket className='cart_icon' onClick={()=>setTogleCart(!togleCart)}/>
                     <span className='cart_badge'>0</span>
                  </span>
                  <span>

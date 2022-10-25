@@ -20,7 +20,6 @@ function Home(){
   const [product,setProduct]=useState(products)
   const [filterproduct,setFilterproduct]=useState(product)
   const [hotpizza,setHotPizza]=useState([])
-  console.log(hotpizza)
   useEffect(()=>{
     const pizza=product.filter(product=>product.category==='Pizza')
     const newpizza=pizza.slice(0,4)

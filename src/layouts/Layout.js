@@ -1,11 +1,13 @@
 import Header from "../components/header"
 import Routers from "../routes/Routers"
 import Cart from "../cart/Cart"
+import { useState } from "react"
 function Layout(){
+    const [togleCart,setTogleCart]=useState(false)
     return(
         <div className="wrapper">
-            <Header />
-             <Cart />
+            <Header togleCart={togleCart} setTogleCart={setTogleCart} />
+            {togleCart && <Cart />}                
             <Routers />
         </div>
     )
