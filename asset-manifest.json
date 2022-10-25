@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/shopcart/static/css/main.20e8ff39.css",
-    "main.js": "/shopcart/static/js/main.696d66cd.js",
+    "main.css": "/shopcart/static/css/main.5b8b9f45.css",
+    "main.js": "/shopcart/static/js/main.6de9b35f.js",
     "static/js/787.639a1216.chunk.js": "/shopcart/static/js/787.639a1216.chunk.js",
+    "static/media/network.png": "/shopcart/static/media/network.7deb539d0303413c1704.png",
     "static/media/product_4.3.png": "/shopcart/static/media/product_4.3.2df1cebb0cf62346965c.png",
     "static/media/hero.png": "/shopcart/static/media/hero.e3ef74be66b8a37b4de8.png",
+    "static/media/ava-1.jpg": "/shopcart/static/media/ava-1.c185d7723fe40ec46830.jpg",
+    "static/media/ava-3.jpg": "/shopcart/static/media/ava-3.1442075049ece43143f2.jpg",
     "static/media/location.png": "/shopcart/static/media/location.c2a808618ecbf53c92bc.png",
     "static/media/product_3.1.jpg": "/shopcart/static/media/product_3.1.9c207cdf68c9700b11ce.jpg",
     "static/media/product_2.2.jpg": "/shopcart/static/media/product_2.2.4967c9cbe3fec366a31a.jpg",
+    "static/media/ava-2.jpg": "/shopcart/static/media/ava-2.11e918c656d0c7851624.jpg",
     "static/media/product_2.3.jpg": "/shopcart/static/media/product_2.3.3914f9eb0c0b372910ea.jpg",
     "static/media/product_4.2.jpg": "/shopcart/static/media/product_4.2.e82e43e0a3fc5dab999e.jpg",
     "static/media/product_4.1.jpg": "/shopcart/static/media/product_4.1.3c8ecc492220a3922731.jpg",
@@ -25,12 +29,12 @@
     "static/media/bread(3).png": "/shopcart/static/media/bread(3).e4b9fdd91579778ae4cc.png",
     "static/media/bread(1).png": "/shopcart/static/media/bread(1).2fbb5c91c696e21efcb6.png",
     "index.html": "/shopcart/index.html",
-    "main.20e8ff39.css.map": "/shopcart/static/css/main.20e8ff39.css.map",
-    "main.696d66cd.js.map": "/shopcart/static/js/main.696d66cd.js.map",
+    "main.5b8b9f45.css.map": "/shopcart/static/css/main.5b8b9f45.css.map",
+    "main.6de9b35f.js.map": "/shopcart/static/js/main.6de9b35f.js.map",
     "787.639a1216.chunk.js.map": "/shopcart/static/js/787.639a1216.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20e8ff39.css",
-    "static/js/main.696d66cd.js"
+    "static/css/main.5b8b9f45.css",
+    "static/js/main.6de9b35f.js"
   ]
 }
