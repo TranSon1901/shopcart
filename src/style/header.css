@@ -48,14 +48,14 @@ nav ul li a:hover{
     margin-right: 15px;
 }
 .cart_icon{
-    font-size: 25px;
+    font-size: 20px;
 }
 .cart{
     position: relative;
     z-index: 1;
 }
 .menu{
-    font-size: 35px;
+    font-size: 36px;
     font-weight: 600;
     display: none;
    
@@ -115,7 +115,7 @@ nav ul li a:hover{
         display: block;
     }
     .menu{
-        display: inline-block;
+        display:inline-block;
     }
     .togle{
         display: block;
@@ -135,10 +135,7 @@ nav ul li a:hover{
         height: 90px;
     }
     .cart_icon{
-        font-size: 18px;
-    }
-    .menu{
-        font-size: 25px;
+        font-size: 20px;
     }
     header img{
         width:  45px;

@@ -12,28 +12,26 @@ function WhyTasTy(){
             </h2>
             <p className="why_tast_decs">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dolorum, minus. Tempora reprehenderit a corporis velit,
-            laboriosam vitae ullam, repellat illo sequi odio esse iste
-            fugiat dolor, optio incidunt eligendi deleniti!
+            Dolorum, minus. Tempora reprehenderit a corporis velit
             </p>
             </div>
             <div className='tast_list'>
                 <div className='tast_item'>
-                   <p><AiOutlineCheckCircle/> Fresh and tasty foods</p>
+                   <p><AiOutlineCheckCircle className='tasty_check_icon'/> Fresh and tasty foods</p>
                     <p className="choose_us-desc">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Quia, voluptatibus.
                    </p>
                 </div>
                 <div className='tast_item'>
-                   <p><AiOutlineCheckCircle/>Quality support</p>
+                   <p><AiOutlineCheckCircle className='tasty_check_icon'/>Quality support</p>
                     <p className="choose_us-desc">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Quia, voluptatibus.
                    </p>
                 </div>
                 <div className='tast_item'>
-                   <p><AiOutlineCheckCircle/>Order from any location</p>
+                   <p><AiOutlineCheckCircle className='tasty_check_icon'/>Order from any location</p>
                     <p className="choose_us-desc">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Quia, voluptatibus.

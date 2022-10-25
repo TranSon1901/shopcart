@@ -30,9 +30,13 @@
     border: 1px solid #999;
     padding: 20px 10px;
 }
+.tasty_check_icon{
+   color: #df2020;
+}
 @media only screen and (max-width: 992px){
     .why_choose-us{
         padding: 0 100px;
+        flex-direction: column;
     }
     .why_tast_decs{
         font-size: 13px;
@@ -46,12 +50,20 @@
     .why_choose-us{
         padding: 0 50px;
     }
-}
-@media only screen and (max-width: 576px){
-    .why_choose-us{
-    flex-direction: column;
+    .why_choose-us img{
+        width: 60%;
+        height: 350px;
     }
     .why_tast{
+        padding-top: 0;
+    }
+}
+@media only screen and (max-width: 576px){
+    .why_tast{
         padding-top: 20px;
+    }
+    .why_choose-us img{
+        width: 75%;
+        height: 200px;
     }
 }

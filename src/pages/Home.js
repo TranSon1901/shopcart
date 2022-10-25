@@ -18,7 +18,13 @@ function Home(){
   const [active,setActive]=useState('ALL')
   const [product,setProduct]=useState(products)
   const [filterproduct,setFilterproduct]=useState(product)
-  console.log(product)
+  const [hotpizza,setHotPizza]=useState([])
+  console.log(hotpizza)
+  useEffect(()=>{
+    const pizza=product.filter(product=>product.category==='Pizza')
+    const newpizza=pizza.slice(0,4)
+    setHotPizza([...newpizza])
+  },[])
   useEffect(()=>{
     if(active==='ALL'){
       setFilterproduct(product)
@@ -96,7 +102,19 @@ function Home(){
              ))
            }
         </section>
-        <WhyTasTy /> 
+        <WhyTasTy />
+        <section className='hotpizza'>
+          <h2>Hot Pizza</h2>
+          <div className="product_wrapper">
+            {
+              hotpizza.map((item,index)=>(
+                <div className='product_item' key={index}>
+                   <Product item={item}/>
+                </div>
+              ))
+            }
+          </div>
+        </section> 
       </> 
     )
 }
