@@ -1,0 +1,33 @@
+.testimonial{
+    display: flex;
+    padding: 0 100px;
+}
+.testimonial{
+    margin-top: 100px;
+}
+.testimonial_img{
+    width: 50%;
+}
+.testimonial_img img{
+    width: 100%;
+}
+.testimonial_content{
+    width: 50%;
+    text-align: left;
+}
+.testimonial_subtitle {
+    color: #df2020;
+  }
+.testimonial_title span {
+    color: #df2020;
+}
+.testimonial_desc {
+    color: #777;
+    line-height: 30px;
+}
+@media only screen and (max-width: 992px){
+
+}    
+@media only screen and (max-width: 768px){
+
+}
