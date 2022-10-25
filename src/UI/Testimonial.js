@@ -13,7 +13,7 @@ function Testimonial(){
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Distinctio quasi qui minus quos sit perspiciatis inventore
                 quis provident placeat fugiat!
-             </p>
+            </p>
         <TestimonialSlider />
         </div>
         <div className='testimonial_img'>
