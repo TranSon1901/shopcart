@@ -1,6 +1,10 @@
 import {Link} from 'react-router-dom'
 import '../style/product.css'
+import {useContext} from 'react'
+import {ProductCart} from '../Providecontext'
 function Product(prop){
+    const data=useContext(ProductCart)
+    const addCart=data.addCart
     const { id, title, image01, price } = prop.item;
     return(
         <>
@@ -14,7 +18,8 @@ function Product(prop){
           </h5>
           <div className="">
             <span className="product_price">${price}</span>
-            <button className="addTOCart_btn">
+            <button  onClick={()=>addCart(id)}
+            className="addTOCart_btn">
               Add to Cart
             </button>
           </div>
