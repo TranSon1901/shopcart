@@ -3,8 +3,12 @@ import {AiOutlineClose} from 'react-icons/ai'
 import {Link} from 'react-router-dom'
 import CartItem from './CartItem'
 import '../style/cart.css'
+import {useContext} from 'react'
+import {ProductCart} from '../Providecontext'
 function Cart({togleCart,setTogleCart}){
-    const [cartProduct,setCartProduct]=useState([])
+    const data= useContext(ProductCart)
+    const {cart,addcart}=data
+    const [cartProduct,setCartProduct]=useState(cart)
     return(
         <div className="cart_container">
             <div className='cart_menu'>
@@ -13,7 +17,7 @@ function Cart({togleCart,setTogleCart}){
               className='cart_close_icon'/>
            </div>
            <div className='cart_item_list'>
-             {/* {
+             {
                 cartProduct.length===0? (
                     <h3>No item added to the cart</h3>
                 ):(
@@ -21,9 +25,7 @@ function Cart({togleCart,setTogleCart}){
                       <CartItem item={item} key={index} />
                     ))
                   )
-             } */}
-             <CartItem />
-            <CartItem />  
+             }
            </div>
         <div className="cart_bottom">
           <h3>
