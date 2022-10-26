@@ -6,7 +6,6 @@ import {AiOutlineClose} from 'react-icons/ai'
 import '../style/header.css'
 import {useState} from 'react'
 function Header({togleCart,setTogleCart}){
-    console.log(togleCart)
    const [togle,setTogle]=useState(false)
    const hanldeTogle=()=>{
      setTogle(!togle)

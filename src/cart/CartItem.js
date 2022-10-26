@@ -5,20 +5,20 @@ function CartItem(){
        <div className="cart_item">
            <img src=""/>
            <div className="cart_product">
-             <h6 className="cart_product_title">hamburger</h6>
-              <p className="product_price"> 1x <span>$25</span></p>
-             <div>
+             <h3 className="cart_product_title">hamburger</h3>
+              <div className="product_price"> 1x <span>$25</span></div>
+             <div className='cart_item_icon'> 
              <span className="increase_btn">
                 +
               </span>
               <span className="quantity">1</span>
               <span className="decrease_btn">
-                _
+                -
               </span>
-              <span className="delete_btn" >
-                   <AiOutlineClose />
-              </span>
-            </div>        
+            </div>   
+            <span>
+                   <AiOutlineClose className="delete_btn"/>
+              </span>     
            </div>
        </div>
        
