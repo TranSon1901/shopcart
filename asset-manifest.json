@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopcart/static/css/main.5b8b9f45.css",
-    "main.js": "/shopcart/static/js/main.6de9b35f.js",
+    "main.css": "/shopcart/static/css/main.fe5483ec.css",
+    "main.js": "/shopcart/static/js/main.6c942ad3.js",
     "static/js/787.639a1216.chunk.js": "/shopcart/static/js/787.639a1216.chunk.js",
     "static/media/network.png": "/shopcart/static/media/network.7deb539d0303413c1704.png",
     "static/media/product_4.3.png": "/shopcart/static/media/product_4.3.2df1cebb0cf62346965c.png",
@@ -28,13 +28,17 @@
     "static/media/res-logo.png": "/shopcart/static/media/res-logo.2f9021c4ef5fe532038e.png",
     "static/media/bread(3).png": "/shopcart/static/media/bread(3).e4b9fdd91579778ae4cc.png",
     "static/media/bread(1).png": "/shopcart/static/media/bread(1).2fbb5c91c696e21efcb6.png",
+    "static/media/slick.svg": "/shopcart/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/shopcart/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/shopcart/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/shopcart/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/shopcart/index.html",
-    "main.5b8b9f45.css.map": "/shopcart/static/css/main.5b8b9f45.css.map",
-    "main.6de9b35f.js.map": "/shopcart/static/js/main.6de9b35f.js.map",
+    "main.fe5483ec.css.map": "/shopcart/static/css/main.fe5483ec.css.map",
+    "main.6c942ad3.js.map": "/shopcart/static/js/main.6c942ad3.js.map",
     "787.639a1216.chunk.js.map": "/shopcart/static/js/787.639a1216.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b8b9f45.css",
-    "static/js/main.6de9b35f.js"
+    "static/css/main.fe5483ec.css",
+    "static/js/main.6c942ad3.js"
   ]
 }
