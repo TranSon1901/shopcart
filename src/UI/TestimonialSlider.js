@@ -2,6 +2,8 @@ import ava01 from "../assets/images/ava-1.jpg";
 import ava02 from "../assets/images/ava-2.jpg";
 import ava03 from "../assets/images/ava-3.jpg";
 import '../style/slider.css'
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 function TestimonialSlider(){
     const settings = {
@@ -25,7 +27,7 @@ function TestimonialSlider(){
         </p>
          <div className="slider_content">
           <img src={ava01} alt="avatar" className=" rounded" />
-          <h6>Jhon Doe</h6>
+          <h3>Jhon Doe</h3>
         </div>
        </div>
        <div>
@@ -37,7 +39,7 @@ function TestimonialSlider(){
         </p>
          <div className="slider_content">
           <img src={ava02} alt="avatar" className=" rounded" />
-          <h6>Jhon Doe</h6>
+          <h3>Jhon Doe</h3>
         </div>
        </div>
        <div>
@@ -49,7 +51,7 @@ function TestimonialSlider(){
         </p>
          <div className="slider_content">
           <img src={ava03} alt="avatar" className=" rounded" />
-          <h6>Jhon Doe</h6>
+          <h3>Jhon Doe</h3>
         </div>
        </div>
        </Slider> 

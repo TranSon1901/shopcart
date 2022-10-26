@@ -5,6 +5,7 @@
 }
 .slider_content{
     display: flex;
+    margin-top: 10px;
 }
   
 .slider_content img {

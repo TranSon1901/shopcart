@@ -21,7 +21,7 @@ function Home(){
   const [filterproduct,setFilterproduct]=useState(product)
   const [hotpizza,setHotPizza]=useState([])
   useEffect(()=>{
-    const pizza=product.filter(product=>product.category==='Pizza')
+    const pizza=products.filter(product=>product.category==='Pizza')
     const newpizza=pizza.slice(0,4)
     setHotPizza([...newpizza])
   },[])
@@ -30,7 +30,7 @@ function Home(){
       setFilterproduct(product)
     }
     if(active==='Burger'){
-      const products=[...product]
+      const products=[...products]
       const burger=products.filter(product=>product.category==='Burger')
      setFilterproduct(burger)
     }
