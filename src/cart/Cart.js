@@ -7,9 +7,7 @@ import {useContext} from 'react'
 import {ProductCart} from '../Providecontext'
 function Cart({togleCart,setTogleCart}){
     const data= useContext(ProductCart)
-    const {cart,addCart}=data
-    const [cartProduct,setCartProduct]=useState(cart)
-    console.log(cartProduct)
+    const {cart,deteleCart,increase,decrease,total}=data  
     return(
         <div className="cart_container">
             <div className='cart_menu'>
@@ -19,21 +17,27 @@ function Cart({togleCart,setTogleCart}){
            </div>
            <div className='cart_item_list'>
              {
-                cartProduct.length===0? (
+                cart.length===0? (
                     <h3>No item added to the cart</h3>
                 ):(
-                    cartProduct.map((item, index) => (
+                    cart.map((item,index) => (
                       <CartItem 
-                      addCart={addCart}
-                      item={item} 
-                      key={index} />
+                      deteleCart={deteleCart}
+                      item={item}
+                      index={index} 
+                      key={item.id} 
+                      id={item.id}
+                      decrease={decrease}
+                      increase={increase}
+                      total={total}
+                      />
                     ))
                   )
              }
            </div>
         <div className="cart_bottom">
           <h3>
-            Subtotal:<span>$100</span>
+            Subtotal:<span>${total}</span>
           </h3>
           <button>
             <Link to="/checkout" onClick={()=>setTogleCart(!togleCart)}>
