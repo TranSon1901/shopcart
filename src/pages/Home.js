@@ -30,9 +30,9 @@ function Home(){
       setFilterproduct(product)
     }
     if(active==='Burger'){
-      const products=[...products]
-      const burger=products.filter(product=>product.category==='Burger')
-     setFilterproduct(burger)
+      const products=[...product]
+      const pizza=products.filter(product=>product.category==='Burger')
+       setFilterproduct(pizza)
     }
     if(active==='Pizza'){
       const products=[...product]
