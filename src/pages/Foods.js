@@ -21,13 +21,13 @@ function Foods(){
          setFilterproduct(product)
       }
     }
-    const productPerPage = 12;
+    const productPerPage = 8;
     const visitedPage = pageNumber * productPerPage;
     const displayPage = filterProduct.slice(
       visitedPage,
       visitedPage + productPerPage
     );
-    const pageCount = Math.ceil(filterProduct.length / productPerPage);
+    const pageCount = Math.ceil(filterProduct.length/productPerPage);
   
     const changePage = ({ selected }) => {
       setPageNumber(selected);
@@ -57,7 +57,7 @@ function Foods(){
                 </div>
                 <div className="product_wrapper">
                     {
-                    filterProduct.map((item,index)=>(
+                    displayPage.map((item,index)=>(
                         <div className='product_item' key={index}>
                           <Product item={item}/>
                         </div>      
