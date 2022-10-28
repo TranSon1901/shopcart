@@ -1,17 +1,27 @@
 import productimg from '../assets/images/product_01.1.jpg'
 import '../style/foodDetails.css'
+import {useState} from 'react'
+import {useParams} from 'react-router-dom'
+import products from '../assets/fakedata/products'
 function FoodDetails(){
+    const [tabs,setTabs]=useState('desc')
+    const {id}=useParams()
+    const product=products.find(item=>item.id===id)
+    const [img,setImg]=useState(product.image01)
     return(
         <section className='section_foodDetails'>
             <div className='wrapper_foodDetails'>
               <div className='FoodDetails'>
                 <div className="FoodDetails_img">
-                    <div className='FoodDetails_item'><img src={productimg}></img></div>
-                    <div className='FoodDetails_item'><img src={productimg}></img></div>
-                    <div className='FoodDetails_item'><img src={productimg}></img></div>
+                    <div onClick={()=>setImg(product.image01)} 
+                    className='FoodDetails_item'><img src={product.image01}></img></div>
+                    <div onClick={()=>setImg(product.image02)} 
+                    className='FoodDetails_item'><img src={product.image02}></img></div>
+                    <div onClick={()=>setImg(product.image03)} 
+                    className='FoodDetails_item'><img src={product.image03}></img></div>
                 </div>
                 <div className='FoodDetails_imgbig'>
-                    <div><img src={productimg}></img></div>
+                  <div><img src={img}></img></div>
                 </div>
              </div>
              <div className="single_product_content">
@@ -26,8 +36,11 @@ function FoodDetails(){
             </div>
             <div>
                 <div className='tabs'>
-                    <h3 className='tabs_active'>Description</h3>
-                    <h3>Review</h3>
+                    <h3 onClick={()=>setTabs('desc')} 
+                    className={tabs==='desc'? "tabs_active":""}>Description</h3>
+                    <h3 onClick={()=>setTabs('review')} 
+                    className={tabs==='review'? "tabs_active":""}
+                    >Review</h3>
                 </div>
                 <div className='tabs_content'>
                     <p>In this practical react js project tutorial, I'm going to teach you, step-by-step, how to create  a fully react food delivery app ecommerce website website  from scratch with modern UI and UX. By the end of this video, you will know how to create a react app from scratch, how to use redux toolkit, how to use the remixicon library in your react projects, how to use react useState hooks, useEff</p>
