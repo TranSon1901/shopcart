@@ -14,7 +14,7 @@ function FoodDetails(){
                     <div><img src={productimg}></img></div>
                 </div>
              </div>
-             <div className="single__product-content">
+             <div className="single_product_content">
                 <h2 className='FoodDetails_title'>Pizza With MusRom</h2>
                 <p className='FoodDetails_price'>Price:<span>$34</span></p>
                 <p className="category">Category: <span>Burger</span>

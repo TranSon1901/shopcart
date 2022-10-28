@@ -101,5 +101,41 @@
 .feedback_text {
     color: #212245b6;
 }
-  
+@media only screen and (max-width: 768px){
+    .section_foodDetails{
+        padding: 0 50px;
+    }
+}  
+@media only screen and (max-width: 576px){
+    .section_foodDetails{
+        padding: 0 30px;
+    }
+    .FoodDetails{
+        flex-direction: column;
+        width: 40%;
+    }
+    .FoodDetails_img{
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .single_product_content{
+        width: 60%;
+        margin-left: 10px;
+    }
+    .FoodDetails_title{
+        font-size: 20px;
+    }
+    .FoodDetails_price{
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .FoodDetails_price span{
+        font-size: 20px;
+    }
+    .form{
+        width: 80%;
+    }
+}
   
