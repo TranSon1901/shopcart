@@ -14,7 +14,7 @@ function Product(prop){
   
         <div className="product_content">
           <h5>
-            <Link to={`/foods/${id}`}>{title}</Link>
+            <Link to={`/shopcart/foods/${id}`}>{title}</Link>
           </h5>
           <div className="">
             <span className="product_price">${price}</span>

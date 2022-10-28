@@ -72,6 +72,7 @@ function Foods(){
                 previousLabel={"Prev"}
                 nextLabel={"Next"}
                 containerClassName="paginationBttns"
+                activeClassName="active_page"
               />
             </div>
             </section>
