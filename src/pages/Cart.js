@@ -5,7 +5,7 @@ import {ProductCart} from '../Providecontext'
 import {Link} from 'react-router-dom'
 function Cart(){
     const data=useContext(ProductCart)
-    const {cart,deteleCart}= data
+    const {cart,deteleCart,total}= data
     return(
         <section className="section_cartpage">
              {cart.length === 0 ? (
@@ -35,7 +35,7 @@ function Cart(){
                 <div className="cartPage_bottom">
                 <h3>
                   Subtotal: $
-                  <span className="cart_subtotal"></span>
+                  <span className="cart_subtotal">{total}</span>
                 </h3>
                 <p>Taxes and shipping will calculate at checkout</p>
                 <div className="">

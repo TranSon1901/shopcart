@@ -7,7 +7,7 @@ function CartItem(props){
           <img src={image01} alt="" />
         </td>
         <td className="cartItem_page">{title}</td>
-        <td className="cartItem_page">${price}</td>
+        <td className="cartItem_page">${price*count}</td>
         <td className="cartItem_page">{count}px</td>
         <td className="cartItem_page">
           <RiDeleteBin6Line 
