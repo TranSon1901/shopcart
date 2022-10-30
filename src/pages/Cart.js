@@ -43,7 +43,7 @@ function Cart(){
                     <Link to="/shopcart/foods">Continue Shopping</Link>
                   </button>
                   <button className="cartPage_btn">
-                    <Link to="/checkout">Proceed to checkout</Link>
+                    <Link to="/shopcart/checkout">Proceed to checkout</Link>
                   </button>
                 </div>
               </div>

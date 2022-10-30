@@ -1,0 +1,29 @@
+.section_login{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.section_login a{
+    text-decoration: none;
+    color:  #df2020;
+}
+.Login_btn{
+    border: none;
+    padding: 7px 25px;
+    background: #df2020;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: none;
+}
+@media only screen and (max-width: 768px){
+    .section_login{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 567px){
+    .section_login{
+        width: 90%;
+    }
+}
