@@ -3,10 +3,13 @@ import "../style/cartPage.css"
 import {useContext} from 'react'
 import {ProductCart} from '../Providecontext'
 import {Link} from 'react-router-dom'
+import CommonSecttion from "../UI/CommonSecttion"
 function Cart(){
     const data=useContext(ProductCart)
     const {cart,deteleCart,total}= data
     return(
+      <>
+        <CommonSecttion />
         <section className="section_cartpage">
              {cart.length === 0 ? (
                 <h2 className="cart_empty">Your cart is empty</h2>
@@ -48,6 +51,7 @@ function Cart(){
                 </div>
               </div>
         </section>
+      </>
     )
 }
 export default Cart

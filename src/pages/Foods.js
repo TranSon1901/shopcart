@@ -5,6 +5,7 @@ import products from '../assets/fakedata/products'
 import Product from '../UI/Product'
 import ReactPaginate from "react-paginate";
 import '../style/panigation.css'
+import CommonSecttion from '../UI/CommonSecttion'
 function Foods(){
     const [search,setSeacrh]=useState("")
     const [filterProduct,setFilterproduct]=useState(products)
@@ -36,6 +37,7 @@ function Foods(){
     return(
         <div>
             <section>
+              <CommonSecttion title="All Foods"/>
                 <div className='wrapper_top'>
                     <div className="search_widget">
                         <input type="text"

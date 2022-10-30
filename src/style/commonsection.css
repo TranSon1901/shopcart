@@ -1,7 +1,27 @@
-
-.common_section {  
+.common_Section{  
+    background: linear-gradient(#212245b2, #212245b2),
+    url("../assets/images/fast-food-la-gi.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 80px 0px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
+.common_Section h2{
+  color: #fff;
+  margin-left: 200px;
+  font-size: 30px;
+}
+@media only screen and (max-width: 768px){
+  .common_Section{
+    padding: 50px;
+  }
+  .common_Section h2{
+    color: #fff;
+    margin: 0 auto;
+    font-size: 25px;
+  }
+}  

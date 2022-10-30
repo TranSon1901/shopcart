@@ -6,6 +6,8 @@ import products from '../assets/fakedata/products'
 import Product from '../UI/Product'
 import {useContext} from 'react'
 import {ProductCart} from '../Providecontext'
+import CommonSecttion from '../UI/CommonSecttion'
+import { useEffect } from 'react'
 function FoodDetails(){
     const [tabs,setTabs]=useState('desc')
     const {id}=useParams()
@@ -14,8 +16,13 @@ function FoodDetails(){
     const relatedproduct=products.filter(item=>item.category===product.category)
     const data=useContext(ProductCart)
     const addCart=data.addCart
+    useEffect(()=>{
+      setImg(product.image01)
+    },[product])
     return(
-        <section className='section_foodDetails'>
+      <> 
+        <CommonSecttion title={product.title}/>
+      <section className='section_foodDetails'>
             <div className='wrapper_foodDetails'>
               <div className='FoodDetails'>
                 <div className="FoodDetails_img">
@@ -111,6 +118,7 @@ function FoodDetails(){
                }
             </div>
         </section>
+      </>
     )
 }
 export default FoodDetails

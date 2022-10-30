@@ -3,6 +3,7 @@ import {useContext} from 'react'
 import {ProductCart} from '../Providecontext'
 import { useEffect } from "react"
 import { useState } from "react"
+import CommonSecttion from "../UI/CommonSecttion"
 function CheckOut(){
     const data=useContext(ProductCart)
     const [totalFull,setTotalFull]=useState(0)
@@ -16,6 +17,8 @@ function CheckOut(){
         }
     },[total])
     return(
+        <>
+        <CommonSecttion />
         <section className="section_checkout">
             <div className="section_left">
               <h3>Shipping Address</h3>
@@ -83,6 +86,7 @@ function CheckOut(){
               </div>
             </div>
       </section>
+        </>
     )
 }
 export default CheckOut
