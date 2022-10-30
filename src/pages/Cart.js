@@ -37,8 +37,8 @@ function Cart(){
                 </table>)}
                 <div className="cartPage_bottom">
                 <h3>
-                  Subtotal: $
-                  <span className="cart_subtotal">{total}</span>
+                  Subtotal:
+                  <span className="cart_subtotal"> ${total}</span>
                 </h3>
                 <p>Taxes and shipping will calculate at checkout</p>
                 <div className="">

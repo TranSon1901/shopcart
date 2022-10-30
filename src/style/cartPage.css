@@ -44,6 +44,9 @@ tbody td{
 .cartPage_bottom p{
     margin: 10px 0;
 }
+.cart_subtotal{
+    color: #df2020;
+}
 @media only screen and (max-width: 992px){
     
 }

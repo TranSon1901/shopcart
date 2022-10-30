@@ -8,7 +8,20 @@ import {useContext} from 'react'
 import {ProductCart} from '../Providecontext'
 import CommonSecttion from '../UI/CommonSecttion'
 import { useEffect } from 'react'
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import Slider from "react-slick"
 function FoodDetails(){
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    autoplaySpeed: 3000,
+    autoplay: true,
+    swipeToSlide: true,
+    slidesToShow: 4,
+    slidesToScroll: 3,
+  };
     const [tabs,setTabs]=useState('desc')
     const {id}=useParams()
     const product=products.find(item=>item.id===id)
@@ -104,18 +117,25 @@ function FoodDetails(){
                   </form>
             </div>
             <div>
-               <h2 className="">You might also like</h2>
-               {
-               <div className="product_wrapper">
+               <h2 className="">You might also like</h2>   
+               {/* <div className="product_wrapper">
                {
                  relatedproduct.map((item,index)=>(
                    <div className='product_item' key={index}>
                       <Product item={item}/>
                    </div>
                  ))
-               }
-             </div>
-               }
+               }  
+                </div>      */}
+            <Slider {...settings}>
+              {
+                 relatedproduct.map((item,index)=>(
+                   <div className='product_item product_item_details' key={index}>
+                      <Product item={item}/>
+                   </div>
+                 ))
+               }  
+            </Slider>
             </div>
         </section>
       </>
