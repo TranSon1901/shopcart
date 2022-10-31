@@ -1,0 +1,132 @@
+.footer{
+    padding: 50px 100px 30px 100px;
+    background: #fde4e4;
+    display: flex;
+}
+.footer_logo img {
+    width: 100Px;
+    margin-bottom: 5px;
+}
+.footer_left{
+    display: flex;
+    width: 45%;
+}
+.footer_logo{
+    width: 60%;
+}
+.footer_right{
+    background-color: #fde4e4;
+}
+.footer_logo h5 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.footer_logo p {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 28px;
+}
+.delivery_time-item{
+    margin-top: 15px;
+}
+.delivery_time-item span {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #212245;
+}
+.delivery_time-item p {
+    color: #212245;
+}
+.footer_title {
+    font-size: 1.1rem;
+    color: #212245;
+    font-weight: 600;
+}
+.footer_right{
+    display: flex;
+}
+.newsletter_wrapper{
+    margin-left: 40px;
+}
+.newsletter{
+    padding: 5px;
+    border: 1px solid #212245;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.newsletter input{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.newsletter span{
+    background: #df2020;
+    padding: 5px 30px;
+    border-radius: 5px;    
+}
+.newsletter_icon{
+    color: #fff;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 992px) {
+    .footer{
+        flex-direction: column;
+    }
+    .footer_left{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .newsletter input {
+      padding: 7px;
+      font-size: 0.7rem;
+    }
+    .newsletter span {
+      padding: 4px 20px;
+      font-size: 0.7rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .footer{
+      padding: 50px 50px 30px 50px;
+    }
+    .footer_title {
+      font-size: 0.8rem;
+    }
+  
+    .delivery_time-item span {
+      font-size: 0.8rem;
+    }
+  
+    .delivery_time-item p {
+      font-size: 0.7rem;
+      margin-bottom: 0;
+    }
+    .newsletter_wrapper{
+        margin-left: 150px;
+    }
+  }
+  @media only screen and (max-width: 567px){
+    .footer{
+        padding: 30px 20px 30px 20px;
+      }
+      .footer_right{
+        flex-direction: column-reverse;
+      }
+      .newsletter_wrapper{
+        margin:0 ;
+        margin-bottom: 10px;
+      }
+             
+}    
+  
+  
+  
+  
+  
+  
