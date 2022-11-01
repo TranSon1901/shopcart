@@ -10,7 +10,10 @@ function Cart({togleCart,setTogleCart}){
     const {cart,deteleCart,increase,decrease,total}=data  
     return(
         <div className="cart_container">
-            <div className='cart_menu'>
+          <div className={togleCart?'cart_modal':""}
+          onClick={()=>setTogleCart(!togleCart)}
+          ></div>
+          <div className={togleCart? 'cart_menu cart_menu-show':'cart_menu'}>
            <div className="cart_close">
               <AiOutlineClose onClick={()=>setTogleCart(!togleCart)}
               className='cart_close_icon'/>
@@ -18,7 +21,7 @@ function Cart({togleCart,setTogleCart}){
            <div className='cart_item_list'>
              {
                 cart.length===0? (
-                    <h3>No item added to the cart</h3>
+                    <h3 style={{padding:15}}>No item added to the cart</h3>
                 ):(
                     cart.map((item,index) => (
                       <CartItem 
@@ -40,7 +43,7 @@ function Cart({togleCart,setTogleCart}){
             Subtotal:<span>${total}</span>
           </h3>
           <button>
-            <Link to="/checkout" onClick={()=>setTogleCart(!togleCart)}>
+            <Link to="shopcart/checkout" onClick={()=>setTogleCart(!togleCart)}>
               Checkout
             </Link>
           </button>

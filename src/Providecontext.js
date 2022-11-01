@@ -3,7 +3,7 @@ import products from './assets/fakedata/products'
 export const ProductCart=createContext()
 function ProvideContext( {children} ){
     const [cart,setCart]=useState(()=>(JSON.parse(localStorage.getItem('cart'))??[]))
-    const [total,setTotal]=useState(0)  
+    const [total,setTotal]=useState(0) 
     const addCart=(id)=>{
         const check= cart.every(item=>item.id !==id)
         if(check){
@@ -32,7 +32,9 @@ function ProvideContext( {children} ){
         if(item.id===id){
             item.count+=1
         }
-        setCart([...cart])
+       const localcart=JSON.stringify([...cart])
+       localStorage.setItem("cart",localcart)
+       setCart([...cart])
       })
     }
     const decrease=(id)=>{
@@ -41,6 +43,8 @@ function ProvideContext( {children} ){
              item.count=== 1? item.count=1:item.count-=1
             }
         })
+        const localcart=JSON.stringify([...cart])
+        localStorage.setItem("cart",localcart)
         setCart([...cart])
     } 
     useEffect(()=>{

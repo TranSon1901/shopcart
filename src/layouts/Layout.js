@@ -8,7 +8,7 @@ function Layout(){
     return(
         <div className="wrapper">
             <Header togleCart={togleCart} setTogleCart={setTogleCart} />
-            {togleCart && <Cart togleCart={togleCart} setTogleCart={setTogleCart}/>}                
+            <Cart togleCart={togleCart} setTogleCart={setTogleCart}/>                
             <Routers />
             <Footer />
         </div>

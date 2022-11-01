@@ -28,13 +28,14 @@ function FoodDetails(){
     const [img,setImg]=useState(product.image01)
     const relatedproduct=products.filter(item=>item.category===product.category)
     const data=useContext(ProductCart)
-    const addCart=data.addCart
+    const {addCart,increase,decrease}= data
+      
     useEffect(()=>{
       setImg(product.image01)
     },[product])
     return(
       <> 
-        <CommonSecttion title={product.title}/>
+      <CommonSecttion title={product.title}/>
       <section className='section_foodDetails'>
             <div className='wrapper_foodDetails'>
               <div className='FoodDetails'>
@@ -53,8 +54,7 @@ function FoodDetails(){
              <div className="single_product_content">
                 <h2 className='FoodDetails_title'>{product.title}</h2>
                 <p className='FoodDetails_price'>Price:<span>{product.price}</span></p>
-                <p className="category">Category: <span>{product.category}</span>
-                </p>
+                <p className="category">Category: <span>{product.category}</span></p>
                 <button onClick={()=>addCart(product.id)}
                 className="add_btn">
                   Add to Cart
