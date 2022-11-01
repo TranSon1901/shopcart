@@ -15,6 +15,12 @@ function ProvideContext( {children} ){
            alert('ban da mua')
         }    
     }
+    const clearnCart=()=>{
+        console.log("clearn")
+        const localcart=JSON.stringify([])
+        localStorage.setItem("cart",localcart)
+        setCart([])
+    }
     const deteleCart=(index,id)=>{
          const newCart= [...cart]
          cart.forEach(item=>{
@@ -53,7 +59,7 @@ function ProvideContext( {children} ){
     },[cart])
     return(
         <ProductCart.Provider 
-        value={{cart,addCart,deteleCart,increase,decrease,total}}>
+        value={{cart,addCart,deteleCart,increase,decrease,total,clearnCart}}>
           {children}
        </ProductCart.Provider>
     )

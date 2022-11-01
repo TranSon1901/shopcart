@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import CommonSecttion from "../UI/CommonSecttion"
 function Cart(){
     const data=useContext(ProductCart)
-    const {cart,deteleCart,total}= data
+    const {cart,deteleCart,total,clearnCart}= data
     return(
       <>
         <CommonSecttion />
@@ -35,7 +35,11 @@ function Cart(){
                      }
                   </tbody>
                 </table>)}
-                <div className="cartPage_bottom">
+            <div className="cartPage_bottom_ful">
+              <div className="btn_clearnCart">
+                 <button onClick={()=>clearnCart()}>Clearn</button>
+              </div>
+              <div className="cartPage_bottom">
                 <h3>
                   Subtotal:
                   <span className="cart_subtotal"> ${total}</span>
@@ -50,6 +54,7 @@ function Cart(){
                   </button>
                 </div>
               </div>
+            </div>  
         </section>
       </>
     )

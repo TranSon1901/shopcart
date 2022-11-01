@@ -9,7 +9,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.639);
   z-index: 99998;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .cart_menu{
     position: fixed;
@@ -19,7 +19,7 @@
     height: 100%;
     background: #fff;
     z-index: 999999;
-    transition: all 0.3s ease;
+    transition: all 0.5s linear;
 }
 .cart_menu-show{
   right: 0;
@@ -71,9 +71,13 @@
     font-weight: 600;
     text-decoration: none;
   }
+.cart_item_list{
+  max-height: 80vh;
+  overflow-y: scroll;
+}  
 @media only screen and (max-width: 992px){
   .cart_menu{
-    padding: 10px 5px 10px 10px;
+    padding: 10px 5px 10px 20px;
 }
 }
 @media only screen and (max-width: 768px){

@@ -2,6 +2,7 @@
     text-align: center;
     width: 50%;
     margin: 0 auto;
+    min-height: 45vh;
 }
 .section_login a{
     text-decoration: none;
