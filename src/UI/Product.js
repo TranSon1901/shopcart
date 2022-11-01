@@ -9,17 +9,20 @@ function Product(prop){
     return(
         <>
         <div className="product_img">
-          <img src={image01} alt="product_img" className="" />
-        </div>
-  
-        <div className="product_content">
+          <img src={image01} alt="product_img" />
           <h5>
             <Link to={`/shopcart/foods/${id}`}>{title}</Link>
           </h5>
-          <div className="">
+        </div>
+  
+        <div className="product_content">
+          {/* <h5>
+            <Link to={`/shopcart/foods/${id}`}>{title}</Link>
+          </h5> */}
+          <div className="product_bottom">
             <span className="product_price">${price}</span>
-            <button  onClick={()=>addCart(id)}
-            className="addTOCart_btn">
+            <button  onClick={()=>addCart(id)} 
+             className="addTOCart_btn">
               Add to Cart
             </button>
           </div>

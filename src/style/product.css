@@ -5,16 +5,20 @@
     column-gap: 5px;
     row-gap: 5px;
 }
-.product_item {
+.product_item{
     border: 1px solid #fde4e4;
     text-align: center;
     padding: 30px;
     cursor: pointer;
     width: calc(25% - 5px);
-  }
-.product_img {
+    display: flex;
+    flex-direction: column;
+}
+.product_img{
     margin-bottom: 20px;
     transition: 0.4s;
+    flex: 1;
+
 }
 .product_img img{
     width: 100%;
@@ -25,7 +29,7 @@
 .product_content{
     margin-top: 10px;
 }
-.product_content h5 a {
+.product_img h5 a {
     color: #212245;
     font-size: 1rem;
     text-decoration: none;
@@ -49,7 +53,10 @@
     cursor: pointer;
     float: right;
     outline: none;
-  }
+}
+.product_bottom{
+    margin-bottom: auto;
+}
 @media only screen and (max-width: 992px) {
     .product_content h5 a {
       font-size: 0.8rem;
