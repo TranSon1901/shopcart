@@ -57,6 +57,7 @@
 .product_bottom{
     margin-bottom: auto;
 }
+
 @media only screen and (max-width: 992px) {
     .product_content h5 a {
       font-size: 0.8rem;

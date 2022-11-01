@@ -112,6 +112,9 @@
 .feedback_text {
     color: #212245b6;
 }
+.product_item_wrapper{
+    margin-bottom: 60px;
+}
 @media only screen and (max-width: 768px){
     .section_foodDetails{
         padding: 0 50px;

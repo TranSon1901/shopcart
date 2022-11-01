@@ -117,16 +117,8 @@ function FoodDetails(){
                   </form>
             </div>
             <div>
-               <h2 className="">You might also like</h2>   
-               {/* <div className="product_wrapper">
-               {
-                 relatedproduct.map((item,index)=>(
-                   <div className='product_item' key={index}>
-                      <Product item={item}/>
-                   </div>
-                 ))
-               }  
-                </div>      */}
+               <h2 className="">You might also like</h2>  
+             <div className='product_item_wrapper'>
             <Slider {...settings}>
               {
                  relatedproduct.map((item,index)=>(
@@ -135,7 +127,8 @@ function FoodDetails(){
                    </div>
                  ))
                }  
-            </Slider>
+            </Slider>     
+              </div>   
             </div>
         </section>
       </>
