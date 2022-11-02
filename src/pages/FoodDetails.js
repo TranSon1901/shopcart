@@ -117,7 +117,8 @@ function FoodDetails(){
                     <p className="feedback_text">great product</p>
                   </div>
                 </div>}
-                <form className="form">
+                {tabs==="review"
+                  &&<form className="form">
                     <div className="form_group">
                       <input
                         type="text"
@@ -134,13 +135,14 @@ function FoodDetails(){
                       <textarea
                         type="text"
                         placeholder="Write your review"
+                        rows="4"
                        />
                     </div>
 
                     <button type="submit" className="add_btn">
                       Submit
                     </button>
-                  </form>
+                  </form>}
             </div>
             <div>
                <h2 className="">You might also like</h2>  

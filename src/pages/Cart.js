@@ -45,7 +45,7 @@ function Cart(){
                   <span className="cart_subtotal"> ${total}</span>
                 </h3>
                 <p>Taxes and shipping will calculate at checkout</p>
-                <div className="">
+                <div className="allCart_Btn">
                   <button className="cartPage_btn">
                     <Link to="/shopcart/foods">Continue Shopping</Link>
                   </button>

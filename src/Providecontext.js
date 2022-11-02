@@ -4,6 +4,7 @@ export const ProductCart=createContext()
 function ProvideContext( {children} ){
     const [cart,setCart]=useState(()=>(JSON.parse(localStorage.getItem('cart'))??[]))
     const [total,setTotal]=useState(0) 
+    const [openMesseger,setopenMesseger]=useState(false)
     const addCart=(id)=>{
         const check= cart.every(item=>item.id !==id)
         if(check){
@@ -11,10 +12,17 @@ function ProvideContext( {children} ){
            const localcart=JSON.stringify([...cart,...productcart])
            localStorage.setItem("cart",localcart)
             setCart([...cart,...productcart])
+            setopenMesseger(!openMesseger)
         } else{
            alert('ban da mua')
         }    
     }
+    useEffect(()=>{
+      const timeID= setTimeout(()=>{
+           setopenMesseger(false)
+        },1000)
+        return ()=> clearTimeout(timeID)
+    },[openMesseger])
     const clearnCart=()=>{
         console.log("clearn")
         const localcart=JSON.stringify([])
@@ -59,7 +67,7 @@ function ProvideContext( {children} ){
     },[cart])
     return(
         <ProductCart.Provider 
-        value={{cart,addCart,deteleCart,increase,decrease,total,clearnCart}}>
+        value={{cart,addCart,deteleCart,increase,decrease,total,clearnCart,openMesseger}}>
           {children}
        </ProductCart.Provider>
     )

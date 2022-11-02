@@ -76,4 +76,11 @@ tbody td{
     .section_cartpage{
         padding: 0 
     }
+    .cartPage_btn{
+        width: 100%;
+        margin-bottom:10px;
+    }
+    .allCart_Btn{
+        width: 60%;
+    }
 }

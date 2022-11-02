@@ -90,5 +90,9 @@
   .cart_menu{
     width:250px;
   }
+  .cart_bottom{
+    flex-direction: column;
+    justify-content: center;
+  }
 }  
   

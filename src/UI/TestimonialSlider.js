@@ -19,7 +19,7 @@ function TestimonialSlider(){
     return(
        <Slider {...settings}>
        <div>
-          <p className="review__text">
+          <p className="review_text">
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
           atque, quam minus totam maiores laborum! Impedit consectetur illum
           aliquid odit. Odit dolore ipsum quod debitis nostrum necessitatibus
@@ -31,7 +31,7 @@ function TestimonialSlider(){
         </div>
        </div>
        <div>
-          <p className="review__text">
+          <p className="review_text">
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
           atque, quam minus totam maiores laborum! Impedit consectetur illum
           aliquid odit. Odit dolore ipsum quod debitis nostrum necessitatibus
@@ -43,7 +43,7 @@ function TestimonialSlider(){
         </div>
        </div>
        <div>
-          <p className="review__text">
+          <p className="review_text">
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
           atque, quam minus totam maiores laborum! Impedit consectetur illum
           aliquid odit. Odit dolore ipsum quod debitis nostrum necessitatibus
